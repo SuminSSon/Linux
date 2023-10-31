@@ -1,0 +1,5 @@
+Make is a program that generates build files. Used to build, compile, and package projects. Create a CMakeLists.txt file and use CMake to create a build directory. Run CMake in the build directory to create a build system file. Build and run projects using the created build system.
+CMake and Make conduct an incremental build by performing a dependency test. However, CMake reads and analyzes the inside of the source file to identify dependence information on its own.
+In addition, the name and dependence of .o files must be explicitly written in Makefile, but CMake does not have to be small.
+For example, I will show a CMake format that functions just like the Makefile in /home/lsp20/hw1.
+The CMakeLists.txt command creates a Makefile using the CMakeLists.txt command created by ADD_EXECUTABLE (hw1 main.cread.c write.c). If this is executed through the make command, the project is executed.
